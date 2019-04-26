@@ -1,0 +1,752 @@
+﻿[info] [35m[Appium][39m Welcome to Appium v1.12.1
+[info] [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723[info] [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/sessions[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getSessions() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getSessions() result: []
+[info] [35m[HTTP][39m [37m<-- GET /wd/hub/sessions [39m[32m200[39m [90m4 ms - 40[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"MuMu","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"MuMu","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556241529750 (09:18:49 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[warn] [35m[Appium][39m Consider setting 'automationName' capability to 'UiAutomator2' on Android >= 6, since UIAutomator1 framework is not maintained anymore by the OS vendor.
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .BrowserActivity
+[info] [35m[Appium][39m   appPackage: com.android.browser
+[info] [35m[Appium][39m   deviceName: MuMu
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 6.0.1
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".BrowserAc...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: 3a713162-b0df-4c78-83ed-9c9b39e62185
+[info] [35m[ADB][39m Checking whether adb is present[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '6.0.1'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:7555
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 23
+[debug] [35m[ADB][39m Device API level: 23
+[warn] [35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run com.android.browser directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm list packages com.android.browser'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell echo ping'[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'[info] [35m[ADB][39m Checking whether aapt is present
+[info] [35m[ADB][39m Using aapt.exe from C:\fullhouse\android-sdk\build-tools\28.0.3\aapt.exe
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package is older than 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' (13 < 17 or '2.11.0' < '2.14.0')'
+[debug] [35m[ADB][39m Executing upgrade of 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell ls -t -1 /data/local/tmp/appium_cache'[debug] [35m[ADB][39m The count of applications in the cache: 1
+[info] [35m[ADB][39m Caching the application at 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' to '/data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\apks\\settings_apk-debug.apk' /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The upload of 'settings_apk-debug.apk' (1.16 MB) took 2.244s
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm install -r -g /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The installation of 'settings_apk-debug.apk' took 0.555s
+[debug] [35m[ADB][39m Install command stdout: pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[debug] [35m[ADB][39m Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]
+[warn] [35m[ADB][39m Cannot upgrade 'io.appium.settings' because of 'pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[warn] [35m[ADB][39m Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE]'. Trying full reinstall
+[debug] [35m[ADB][39m Uninstalling io.appium.settings
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop io.appium.settings'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 uninstall io.appium.settings'[debug] [35m[ADB][39m 'adb uninstall io.appium.settings' command output: Success
+[info] [35m[ADB][39m io.appium.settings was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell ls -t -1 /data/local/tmp/appium_cache'[debug] [35m[ADB][39m The count of applications in the cache: 1
+[info] [35m[ADB][39m Caching the application at 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' to '/data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\apks\\settings_apk-debug.apk' /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The upload of 'settings_apk-debug.apk' (1.16 MB) took 2.085s
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm install -g /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The installation of 'settings_apk-debug.apk' took 0.839s
+[debug] [35m[ADB][39m Install command stdout: pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[debug] [35m[ADB][39m Success
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell 'pgrep --help; echo $?''[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^io\\.appium\\.settings\$'
+[info] [35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell appops set io.appium.settings android\:mock_location allow'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': MuMu
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Netease
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.browser
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package com.android.browser'
+[debug] [35m[ADB][39m 'com.android.browser' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm clear com.android.browser'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.browser' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 forward tcp\:4724 tcp\:4724'[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:7555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.048
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556241545093 (09:19:05 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m15375 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m4 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".main.MainActivity","appPackage":"com.ss.android.ugc.aweme","deviceName":"oppo R11s","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".main.MainActivity","appPackage":"com.ss.android.ugc.aweme","deviceName":"oppo R11s","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556241572258 (09:19:32 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[warn] [35m[Appium][39m Consider setting 'automationName' capability to 'UiAutomator2' on Android >= 6, since UIAutomator1 framework is not maintained anymore by the OS vendor.
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .main.MainActivity
+[info] [35m[Appium][39m   appPackage: com.ss.android.ugc.aweme
+[info] [35m[Appium][39m   deviceName: oppo R11s
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 6.0.1
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".main.Main...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: aff228fc-5e4f-42f5-993d-3d1b0508f732
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '6.0.1'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:7555
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.sdk'[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 23
+[debug] [35m[ADB][39m Device API level: 23
+[warn] [35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run com.ss.android.ugc.aweme directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm list packages com.ss.android.ugc.aweme'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 wait-for-device'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+[debug] [35m[ADB][39m There is no need to install/upgrade 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell 'pgrep --help; echo $?''[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^io\\.appium\\.settings\$'
+[info] [35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell appops set io.appium.settings android\:mock_location allow'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': MuMu
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Netease
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.ss.android.ugc.aweme
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package com.ss.android.ugc.aweme'
+[debug] [35m[ADB][39m 'com.ss.android.ugc.aweme' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.ss.android.ugc.aweme'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm clear com.ss.android.ugc.aweme'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.ss.android.ugc.aweme' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:7555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.ss.android.ugc.aweme","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.ss.android.ugc.aweme'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.087
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556241580506 (09:19:40 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m8250 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"oppo R11s","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"oppo R11s","platformName":"Android","platformVersion":"6.0.1","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556241743960 (09:22:23 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[warn] [35m[Appium][39m Consider setting 'automationName' capability to 'UiAutomator2' on Android >= 6, since UIAutomator1 framework is not maintained anymore by the OS vendor.
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .BrowserActivity
+[info] [35m[Appium][39m   appPackage: com.android.browser
+[info] [35m[Appium][39m   deviceName: oppo R11s
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 6.0.1
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".BrowserAc...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: 92086d30-0ce2-4c41-a8f3-b0bc2eef23ce
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '6.0.1'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:7555
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:7555
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 23
+[debug] [35m[ADB][39m Device API level: 23
+[warn] [35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run com.android.browser directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm list packages com.android.browser'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 wait-for-device'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+[debug] [35m[ADB][39m There is no need to install/upgrade 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^io\\.appium\\.settings\$'
+[info] [35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell appops set io.appium.settings android\:mock_location allow'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': MuMu
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m 'com.android.browser' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm clear com.android.browser'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.browser' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:7555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys window'[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.084
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556241752276 (09:22:32 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m8317 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m1 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556242147240 (09:29:07 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .BrowserActivity
+[info] [35m[Appium][39m   appPackage: com.android.browser
+[info] [35m[Appium][39m   deviceName: SM-G9350
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 4.4.2
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".BrowserAc...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: b5cdc388-e8e3-4ad4-bf71-db6e334d864e
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '4.4.2'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:62001
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 19
+[debug] [35m[ADB][39m Device API level: 19
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run com.android.browser directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm list packages com.android.browser'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 wait-for-device'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package is older than 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' (13 < 17 or '2.11.0' < '2.14.0')'
+[debug] [35m[ADB][39m Executing upgrade of 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ls -t -1 /data/local/tmp/appium_cache'[debug] [35m[ADB][39m The count of applications in the cache: 1
+[info] [35m[ADB][39m Caching the application at 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' to '/data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\apks\\settings_apk-debug.apk' /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The upload of 'settings_apk-debug.apk' (1.16 MB) took 0.564s
+[debug] [35m[ADB][39m Skipping permissions grant option, since the current API level 19 does not support applications permissions customization
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm install -r /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The installation of 'settings_apk-debug.apk' took 0.681s
+[debug] [35m[ADB][39m Install command stdout: pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[debug] [35m[ADB][39m Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+[warn] [35m[ADB][39m Cannot upgrade 'io.appium.settings' because of 'pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[warn] [35m[ADB][39m Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]'. Trying full reinstall
+[debug] [35m[ADB][39m Uninstalling io.appium.settings
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop io.appium.settings'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 uninstall io.appium.settings'[debug] [35m[ADB][39m 'adb uninstall io.appium.settings' command output: Success
+[info] [35m[ADB][39m io.appium.settings was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ls -t -1 /data/local/tmp/appium_cache'
+[debug] [35m[ADB][39m The count of applications in the cache: 1
+[info] [35m[ADB][39m Caching the application at 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk' to '/data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\io.appium.settings\\apks\\settings_apk-debug.apk' /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The upload of 'settings_apk-debug.apk' (1.16 MB) took 0.561s
+[debug] [35m[ADB][39m Skipping permissions grant option, since the current API level 19 does not support applications permissions customization
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm install /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk'[info] [35m[ADB][39m The installation of 'settings_apk-debug.apk' took 0.904s
+[debug] [35m[ADB][39m Install command stdout: pkg: /data/local/tmp/appium_cache/728413456b86856a2003edeb524d6bd577ca6418.apk
+[debug] [35m[ADB][39m Success
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell 'pidof --help > /dev/null; echo $?''[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell settings put secure mock_location 1'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-G9350
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.browser
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package com.android.browser'
+[debug] [35m[ADB][39m 'com.android.browser' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm clear com.android.browser'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.browser' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:62001","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] =io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.206
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556242161328 (09:29:21 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m14090 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m1 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556242250886 (09:30:50 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .BrowserActivity
+[info] [35m[Appium][39m   appPackage: com.android.browser
+[info] [35m[Appium][39m   deviceName: SM-G9350
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 4.4.2
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".BrowserAc...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: d9afff6c-53cb-459b-8be1-dc06e9e28405
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '4.4.2'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:62001
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.sdk'[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 19
+[debug] [35m[ADB][39m Device API level: 19
+[info] [35m[AndroidDriver][39m App file was not listed, instead we're going to run com.android.browser directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm list packages com.android.browser'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell echo ping'[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+[debug] [35m[ADB][39m There is no need to install/upgrade 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell 'pgrep --help; echo $?''[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell 'pidof --help > /dev/null; echo $?''
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell settings put secure mock_location 1'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-G9350
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.browser
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package com.android.browser'
+[debug] [35m[ADB][39m 'com.android.browser' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm clear com.android.browser'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.browser' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:62001","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.222
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556242258203 (09:30:58 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m7318 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m1 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appActivity ":".BrowserActivity","appPackage":"com.android.browser","deviceName":"SM-G9350","platformName":"Android","platformVersion":"4.4.2","newCommandTimeout":0,"connectHardwareKeyboard":true},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1556242888410 (09:41:28 GMT+0800 (中国标准时间))
+[warn] [35m[Appium][39m DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+[info] [35m[Appium][39m Setting automation to 'UiAutomator1'. 
+[info] [35m[Appium][39m Appium v1.12.1 creating new AndroidDriver (v4.11.0) session
+[info] [35m[Appium][39m Capabilities:
+[info] [35m[Appium][39m   appActivity : .BrowserActivity
+[info] [35m[Appium][39m   appPackage: com.android.browser
+[info] [35m[Appium][39m   deviceName: SM-G9350
+[info] [35m[Appium][39m   platformName: Android
+[info] [35m[Appium][39m   platformVersion: 4.4.2
+[info] [35m[Appium][39m   newCommandTimeout: 0
+[info] [35m[Appium][39m   connectHardwareKeyboard: true
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"appActivity ":".BrowserAc...
+[warn] [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: appActivity , connectHardwareKeyboard.
+[info] [35m[BaseDriver][39m Session created with session id: 006340a0-044d-41a3-bfff-471cf6455492
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...[debug] [35m[ADB][39m 1 device(s) connected
+[info] [35m[AndroidDriver][39m Looking for a device with Android '4.4.2'
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[info] [35m[AndroidDriver][39m Using device: 127.0.0.1:62001
+[debug] [35m[ADB][39m Setting device id to 127.0.0.1:62001
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.sdk'[info] [35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell echo ping'[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+[debug] [35m[ADB][39m There is no need to install/upgrade 'C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell 'pgrep --help; echo $?''[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell settings put secure mock_location 1'[debug] [35m[Logcat][39m Starting logcat capture
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.build.version.release'[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 4.4.2
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell wm size'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': SM-G9350
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell getprop ro.product.manufacturer'[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': samsung
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.browser
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys package com.android.browser'
+[debug] [35m[ADB][39m 'com.android.browser' is installed
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell pm clear com.android.browser'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.browser' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 push 'C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar' /data/local/tmp/'[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:62001","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [35m[UiAutomator][39m Moving to state 'online'
+[info] [35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop com.android.browser'[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell input keyevent 3'[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 1.284
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell ps'
+[info] [35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\fullhouse\android-sdk\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:62001 shell am force-stop io.appium.unlock'[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1556242896012 (09:41:36 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Encountered internal error running command: Error: activity and pkg are required to start an application
+[debug] [35m[MJSONWP][39m     at ADB.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-adb\lib\tools\apk-utils.js:106:11)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startApp (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\general.js:234:18)
+[debug] [35m[MJSONWP][39m     at AndroidDriver.startAUT [as startAndroidSession] (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\driver.js:291:20)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m7604 ms - 190[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[HTTP][39m No route found. Setting content type to 'text/plain'
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session [39m[33m404[39m [90m1 ms - 57[39m
+[info] [35m[HTTP][39m [90m[39m
